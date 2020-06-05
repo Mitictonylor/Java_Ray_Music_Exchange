@@ -39,11 +39,11 @@ public class PianoTest {
         assertEquals(1000.00, piano.getBuyingPrice(),0.01);
     }
 
-//    @Test
-//    public void getSellingPrice() {
-//        assertEquals();
-//    }
-//
+    @Test
+    public void getSellingPrice() {
+        assertEquals(2500.00, piano.getSellingPrice(), 0.01);
+    }
+
 //    @Test
 //    public void getOctaveNumber() {
 //        assertEquals();
