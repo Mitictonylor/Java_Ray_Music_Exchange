@@ -48,4 +48,16 @@ public class ShopTest {
         shop.removeFromStock(guitar);
         assertEquals(1, shop.countStock());
     }
+
+
+    @Test
+    public void canCalculateTotalMarkupOfTheStock() {
+        assertEquals(0, shop.countStock());
+        shop.addToStock(drumStick);
+        assertEquals(1, shop.countStock());
+        shop.addToStock(guitar);
+        assertEquals(2, shop.countStock());
+        assertEquals(215.00, shop.totalMarkup(),0.01);
+
+    }
 }
