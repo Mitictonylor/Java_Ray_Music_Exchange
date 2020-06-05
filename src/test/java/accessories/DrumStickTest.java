@@ -24,11 +24,11 @@ public class DrumStickTest {
         assertEquals("Yamaha", drumStick.getBrand());
     }
 
-//    @Test
-//    public void getBuyingPrice() {
-//        assertEquals();
-//    }
-//
+    @Test
+    public void getBuyingPrice() {
+        assertEquals(15.00, drumStick.getBuyingPrice(), 0.01);
+    }
+
 //    @Test
 //    public void getSellingPrice() {
 //        assertEquals();
