@@ -14,11 +14,11 @@ public class GuitarStringsTest {
         guitarStrings = new GuitarStrings("1","Gibson", 10.00, 25.00);
     }
 
-//    @Test
-//    public void getModel() {
-//        assertEquals();
-//    }
-//
+    @Test
+    public void getModel() {
+        assertEquals("1", guitarStrings.getModel());
+    }
+
 //    @Test
 //    public void getBrand() {
 //        assertEquals();
