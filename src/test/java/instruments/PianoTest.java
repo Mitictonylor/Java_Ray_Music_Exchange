@@ -24,11 +24,11 @@ public class PianoTest {
         assertEquals("Yamaha", piano.getBrand());
     }
 
-//    @Test
-//    public void getMaterial() {
-//        assertEquals();
-//    }
-//
+    @Test
+    public void getMaterial() {
+        assertEquals("wood", piano.getMaterial());
+    }
+
 //    @Test
 //    public void getType() {
 //        assertEquals();
