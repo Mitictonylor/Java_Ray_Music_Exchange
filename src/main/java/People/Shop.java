@@ -1,6 +1,6 @@
 package People;
 
-import accessories.Accessories;
+
 import behaviours.ISell;
 
 import java.util.ArrayList;
@@ -28,6 +28,10 @@ public class Shop{
         if(this.stock.contains(item)){
             this.stock.remove(item);
         }
+    }
+
+    public double getTill() {
+        return till;
     }
 
     public double totalMarkup() {
