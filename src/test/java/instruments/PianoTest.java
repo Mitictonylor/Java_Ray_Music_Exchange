@@ -44,8 +44,8 @@ public class PianoTest {
         assertEquals(2500.00, piano.getSellingPrice(), 0.01);
     }
 
-//    @Test
-//    public void getOctaveNumber() {
-//        assertEquals();
-//    }
+    @Test
+    public void getOctaveNumber() {
+        assertEquals(8, piano.getOctaveNumber());
+    }
 }
