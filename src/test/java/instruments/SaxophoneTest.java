@@ -44,8 +44,8 @@ public class SaxophoneTest {
         assertEquals(1000.00, saxophone.getSellingPrice(), 0.01);
     }
 
-//    @Test
-//    public void getNumberOfValves() {
-//        assertEquals();
-//    }
+    @Test
+    public void getNumberOfValves() {
+        assertEquals(17, saxophone.getNumberOfValves());
+    }
 }
