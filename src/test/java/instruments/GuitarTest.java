@@ -41,11 +41,11 @@ public class GuitarTest {
         assertEquals(300.00, guitar.getBuyingPrice(), 0.01);
     }
 
-//    @Test
-//    public void getSellingPrice() {
-//        assertEquals();
-//    }
-//
+    @Test
+    public void getSellingPrice() {
+        assertEquals(500.00, guitar.getBuyingPrice(), 0.01);
+    }
+
 //    @Test
 //    public void getNumberOfStrings() {
 //        assertEquals();
