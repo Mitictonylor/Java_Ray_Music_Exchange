@@ -35,4 +35,6 @@ public abstract class Accessories implements ISell {
     public double calculateMarkup(){
         return this.getSellingPrice() - this.getBuyingPrice();
     }
+
+
 }

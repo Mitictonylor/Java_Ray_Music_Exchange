@@ -1,12 +1,17 @@
+package People;
+
+import accessories.Accessories;
 import behaviours.ISell;
 
 import java.util.ArrayList;
 
-public class Shop {
+public class Shop{
 
+    private double till;
     private ArrayList<ISell> stock;
 
-    public Shop() {
+    public Shop(double till) {
+        this.till = till;
         this.stock = new ArrayList<ISell>();
     }
 
@@ -32,4 +37,15 @@ public class Shop {
         }
         return total;
     }
+    public void sell(ISell item, Customer customer){
+        if (this.stock.contains(item)){
+            customer.buy(item);
+            this.removeFromStock(item);
+            this.till += item.getSellingPrice();
+        }
+    }
 }
+
+
+
+

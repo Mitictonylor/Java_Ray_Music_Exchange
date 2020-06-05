@@ -1,3 +1,4 @@
+import People.Shop;
 import accessories.DrumStick;
 import behaviours.ISell;
 import instruments.Guitar;
