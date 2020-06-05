@@ -1,3 +1,5 @@
+package people;
+
 import People.Customer;
 import People.Shop;
 import accessories.DrumStick;
