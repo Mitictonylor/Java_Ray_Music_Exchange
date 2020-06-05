@@ -1,6 +1,8 @@
 package instruments;
 
-public class Piano extends Instruments{
+import behaviours.IPlay;
+
+public class Piano extends Instruments implements IPlay {
 
     private int octaveNumber;
 
@@ -11,5 +13,9 @@ public class Piano extends Instruments{
 
     public int getOctaveNumber() {
         return octaveNumber;
+    }
+
+    public String sound() {
+        return "do re mi";
     }
 }
