@@ -1,7 +1,9 @@
 package accessories;
 
 
-public abstract class Accessories {
+import behaviours.ISell;
+
+public abstract class Accessories implements ISell {
     private String model;
     private String brand;
     private double buyingPrice;
@@ -28,5 +30,9 @@ public abstract class Accessories {
 
     public double getSellingPrice() {
         return sellingPrice;
+    }
+
+    public double calculateMarkup(){
+        return this.getSellingPrice() - this.getBuyingPrice();
     }
 }
