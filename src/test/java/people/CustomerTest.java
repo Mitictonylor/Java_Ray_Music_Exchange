@@ -58,4 +58,13 @@ public class CustomerTest {
         customer.setWallet(50.00);
         assertFalse(customer.enoughMoney(guitar));
     }
+
+    @Test
+    public void canBuyAGuitar() {
+        assertEquals(0, customer.countMyMusicStuff());
+        customer.buy(guitar);
+        assertEquals(1, customer.countMyMusicStuff());
+        assertEquals(9500.00, customer.getWallet(),0.01);
+
+    }
 }
