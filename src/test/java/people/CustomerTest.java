@@ -23,12 +23,12 @@ public class CustomerTest {
     }
 
 
-//
-//    @Test
-//    public void getWallet() {
-//        assertEquals();
-//    }
-//
+
+    @Test
+    public void getWallet() {
+        assertEquals(10000.00, customer.getWallet());
+    }
+
 //    @Test
 //    public void countMyMusicStuff() {
 //        assertEquals();
