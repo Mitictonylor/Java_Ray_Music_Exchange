@@ -15,4 +15,7 @@ public class Shop {
     }
 
 
+    public void addToStock(ISell item) {
+        this.stock.add(item);
+    }
 }
