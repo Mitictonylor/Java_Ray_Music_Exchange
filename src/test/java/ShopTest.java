@@ -16,7 +16,7 @@ public class ShopTest {
 
     @Before
     public void setUp() {
-        shop = new Shop();
+        shop = new Shop(10000.00);
         drumStick = new DrumStick("1","Yamaha",15.00,30.00);
         guitar = new Guitar("1","Gibson","metal", InstrumentType.STRING, 300.00,500.00,7);
 
