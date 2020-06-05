@@ -34,11 +34,11 @@ public class PianoTest {
         assertEquals(InstrumentType.KEYBOARD, piano.getType());
     }
 
-//    @Test
-//    public void getBuyingPrice() {
-//        assertEquals();
-//    }
-//
+    @Test
+    public void getBuyingPrice() {
+        assertEquals(1000.00, piano.getBuyingPrice(),0.01);
+    }
+
 //    @Test
 //    public void getSellingPrice() {
 //        assertEquals();
