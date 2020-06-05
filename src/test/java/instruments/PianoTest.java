@@ -7,13 +7,16 @@ import static org.junit.Assert.*;
 
 public class PianoTest {
 
+    Piano piano;
+
     @Before
     public void setUp() {
+        piano = new Piano("2","Yamaha","wood",InstrumentType.KEYBOARD, 1000,2500,8)
     }
 
     @Test
     public void getModel() {
-        assertEquals();
+        assertEquals("2", piano.getModel());
     }
 //
 //    @Test
