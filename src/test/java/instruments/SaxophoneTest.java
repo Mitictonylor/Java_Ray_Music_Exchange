@@ -29,11 +29,11 @@ public class SaxophoneTest {
         assertEquals("brass", saxophone.getMaterial());
     }
 
-//    @Test
-//    public void getType() {
-//        assertEquals();
-//    }
-//
+    @Test
+    public void getType() {
+        assertEquals(InstrumentType.BRASS, saxophone.getType());
+    }
+
 //    @Test
 //    public void getBuyingPrice() {
 //        assertEquals();
