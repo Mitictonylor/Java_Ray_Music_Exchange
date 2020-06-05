@@ -29,11 +29,11 @@ public class PianoTest {
         assertEquals("wood", piano.getMaterial());
     }
 
-//    @Test
-//    public void getType() {
-//        assertEquals();
-//    }
-//
+    @Test
+    public void getType() {
+        assertEquals(InstrumentType.KEYBOARD, piano.getType());
+    }
+
 //    @Test
 //    public void getBuyingPrice() {
 //        assertEquals();
