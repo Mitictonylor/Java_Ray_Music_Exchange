@@ -26,4 +26,12 @@ public class ShopTest {
         shop.addToStock(drumStick);
         assertEquals(1, shop.countStock());
     }
+
+    @Test
+    public void canRemoveFromStock() {
+        shop.addToStock(drumStick);
+        assertEquals(1, shop.countStock());
+        shop.removeFromStock(drumStick);
+        assertEquals(0, shop.countStock());
+    }
 }

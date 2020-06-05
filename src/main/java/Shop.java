@@ -18,4 +18,10 @@ public class Shop {
     public void addToStock(ISell item) {
         this.stock.add(item);
     }
+
+    public void removeFromStock(ISell item) {
+        if(this.stock.contains(item)){
+            this.stock.remove(item);
+        }
+    }
 }
