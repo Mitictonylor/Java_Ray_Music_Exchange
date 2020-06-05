@@ -26,11 +26,11 @@ public class CustomerTest {
 
     @Test
     public void getWallet() {
-        assertEquals(10000.00, customer.getWallet());
+        assertEquals(10000.00, customer.getWallet(),0.01);
     }
 
-//    @Test
-//    public void countMyMusicStuff() {
-//        assertEquals();
-//    }
+    @Test
+    public void countMyMusicStuff() {
+        assertEquals(0, customer.countMyMusicStuff());
+    }
 }
