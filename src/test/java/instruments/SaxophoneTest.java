@@ -48,4 +48,8 @@ public class SaxophoneTest {
     public void getNumberOfValves() {
         assertEquals(17, saxophone.getNumberOfValves());
     }
+    @Test
+    public void canMakeSound() {
+        assertEquals("pua pua pua", saxophone.sound());
+    }
 }
