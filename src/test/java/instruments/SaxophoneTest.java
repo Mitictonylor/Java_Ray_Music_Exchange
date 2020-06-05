@@ -11,19 +11,19 @@ public class SaxophoneTest {
 
     @Before
     public void setUp() {
-        saxophone = new Saxophone("3","Alto","brass",InstrumentType.BRASS,500.00, 1000.00, 17)
+        saxophone = new Saxophone("3","Alto","brass",InstrumentType.BRASS,500.00, 1000.00, 17);
     }
 
     @Test
     public void getModel() {
         assertEquals("3", saxophone.getModel());
     }
-//
-//    @Test
-//    public void getBrand() {
-//        assertEquals();
-//    }
-//
+
+    @Test
+    public void getBrand() {
+        assertEquals("Alto", saxophone.getBrand());
+    }
+
 //    @Test
 //    public void getMaterial() {
 //        assertEquals();
