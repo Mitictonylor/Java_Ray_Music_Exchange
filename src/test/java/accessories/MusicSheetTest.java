@@ -13,12 +13,12 @@ public class MusicSheetTest {
     public void setUp() {
         sheets = new MusicSheet("a3","papiro",1.00,3.00,100);
     }
-//
-//    @Test
-//    public void getModel() {
-//        assertEquals();
-//    }
-//
+
+    @Test
+    public void getModel() {
+        assertEquals("a3", sheets.getModel());
+    }
+
 //    @Test
 //    public void getBrand() {
 //        assertEquals();
