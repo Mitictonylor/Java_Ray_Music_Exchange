@@ -8,8 +8,7 @@ import instruments.InstrumentType;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class CustomerTest {
 
@@ -54,5 +53,9 @@ public class CustomerTest {
     public void hasEnoughMoneyToBuyGuitar(){
         assertTrue(customer.enoughMoney(guitar));
     }
-
+    @Test
+    public void hasNotEnoughMoneyToBuyGuitar(){
+        customer.setWallet(50.00);
+        assertFalse(customer.enoughMoney(guitar));
+    }
 }
