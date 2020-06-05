@@ -24,11 +24,12 @@ public class GuitarTest {
     public void getBrand() {
         assertEquals("Gibson", guitar.getBrand());
     }
-//
-//    @Test
-//    public void getMaterial() {
-//        assertEquals();
-//    }
+
+    @Test
+    public void getMaterial() {
+        assertEquals("metal", guitar.getMaterial());
+    }
+
 //
 //    @Test
 //    public void getType() {
