@@ -19,13 +19,11 @@ public class GuitarTest {
     public void getModel() {
         assertEquals("1", guitar.getModel());
     }
-//
-//
-//
-//    @Test
-//    public void getBrand() {
-//        assertEquals();
-//    }
+
+    @Test
+    public void getBrand() {
+        assertEquals("Gibson", guitar.getBrand());
+    }
 //
 //    @Test
 //    public void getMaterial() {
