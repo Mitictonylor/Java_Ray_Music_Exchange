@@ -29,11 +29,11 @@ public class MusicSheetTest {
         assertEquals(1.00, sheets.getBuyingPrice(), 0.01);
     }
 
-//    @Test
-//    public void getSellingPrice() {
-//        assertEquals();
-//    }
-//
+    @Test
+    public void getSellingPrice() {
+        assertEquals(3.00, sheets.getSellingPrice(), 0.01);
+    }
+
 //    @Test
 //    public void getNumberOfSheets() {
 //        assertEquals();
