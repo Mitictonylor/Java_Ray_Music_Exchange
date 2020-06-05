@@ -9,6 +9,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class CustomerTest {
 
@@ -48,4 +49,10 @@ public class CustomerTest {
         customer.addToMusicStuff(guitar);
         assertEquals(1, customer.countMyMusicStuff());
     }
+
+    @Test
+    public void hasEnoughMoneyToBuyGuitar(){
+        assertTrue(customer.enoughMoney(guitar));
+    }
+
 }
