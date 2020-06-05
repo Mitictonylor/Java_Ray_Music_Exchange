@@ -14,11 +14,11 @@ public class DrumStickTest {
         drumStick = new DrumStick("1","Yamaha",15.00,30.00);
     }
 
-//    @Test
-//    public void getModel() {
-//        assertEquals();
-//    }
-//
+    @Test
+    public void getModel() {
+        assertEquals("1", drumStick.getModel());
+    }
+
 //    @Test
 //    public void getBrand() {
 //        assertEquals();
