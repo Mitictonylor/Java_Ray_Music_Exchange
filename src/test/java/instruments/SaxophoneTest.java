@@ -39,11 +39,11 @@ public class SaxophoneTest {
         assertEquals(500.00, saxophone.getBuyingPrice(), 0.01);
     }
 
-//    @Test
-//    public void getSellingPrice() {
-//        assertEquals();
-//    }
-//
+    @Test
+    public void getSellingPrice() {
+        assertEquals(1000.00, saxophone.getSellingPrice(), 0.01);
+    }
+
 //    @Test
 //    public void getNumberOfValves() {
 //        assertEquals();
