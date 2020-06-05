@@ -30,7 +30,7 @@ public abstract class Instruments {
         return material;
     }
 
-    public InstrumentType getInstrumentType() {
+    public InstrumentType getType() {
         return type;
     }
 
