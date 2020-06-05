@@ -1,6 +1,6 @@
 package instruments;
 
-public enum Type {
+public enum InstrumentType {
     KEYBOARD,
     WIND,
     STRING,

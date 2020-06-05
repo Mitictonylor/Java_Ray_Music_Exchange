@@ -4,12 +4,12 @@ public abstract class Instruments {
     private String model;
     private String brand;
     private String material;
-    private Type type;
+    private InstrumentType type;
     private double buyingPrice;
     private double sellingPrice;
 
 
-    public Instruments(String model, String brand, String material, Type type, double buyingPrice, double sellingPrice) {
+    public Instruments(String model, String brand, String material, InstrumentType type, double buyingPrice, double sellingPrice) {
         this.model = model;
         this.brand = brand;
         this.material = material;
@@ -30,7 +30,7 @@ public abstract class Instruments {
         return material;
     }
 
-    public Type getType() {
+    public InstrumentType getInstrumentType() {
         return type;
     }
 
