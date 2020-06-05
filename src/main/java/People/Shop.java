@@ -30,6 +30,10 @@ public class Shop{
         }
     }
 
+    public void setTill(double till) {
+        this.till = till;
+    }
+
     public double getTill() {
         return till;
     }
@@ -46,6 +50,16 @@ public class Shop{
             customer.buy(item);
             this.removeFromStock(item);
             this.till += item.getSellingPrice();
+        }
+    }
+
+    public boolean enoughMoney(ISell item){
+        return item.getBuyingPrice() < this.getTill();
+    }
+    public void buy(ISell item){
+        if(enoughMoney(item)){
+            this.setTill(this.getTill() - item.getBuyingPrice());
+            this.addToStock(item);
         }
     }
 }

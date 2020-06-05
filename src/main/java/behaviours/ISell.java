@@ -5,6 +5,7 @@ public interface ISell {
 
     double getSellingPrice();
 
+    double getBuyingPrice();
 
 
 }
