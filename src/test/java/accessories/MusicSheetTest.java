@@ -19,11 +19,11 @@ public class MusicSheetTest {
         assertEquals("a3", sheets.getModel());
     }
 
-//    @Test
-//    public void getBrand() {
-//        assertEquals();
-//    }
-//
+    @Test
+    public void getBrand() {
+        assertEquals("papiro", sheets.getBrand());
+    }
+
 //    @Test
 //    public void getBuyingPrice() {
 //        assertEquals();
