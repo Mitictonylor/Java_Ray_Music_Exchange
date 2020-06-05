@@ -34,8 +34,8 @@ public class MusicSheetTest {
         assertEquals(3.00, sheets.getSellingPrice(), 0.01);
     }
 
-//    @Test
-//    public void getNumberOfSheets() {
-//        assertEquals();
-//    }
+    @Test
+    public void getNumberOfSheets() {
+        assertEquals(100, sheets.getNumberOfSheets());
+    }
 }
