@@ -1,6 +1,10 @@
 package people;
 
 import People.Customer;
+import accessories.DrumStick;
+import behaviours.ISell;
+import instruments.Guitar;
+import instruments.InstrumentType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,11 +13,16 @@ import static org.junit.Assert.assertEquals;
 public class CustomerTest {
 
     Customer customer;
+    ISell drumStick;
+    ISell guitar;
 
 
     @Before
     public void setUp() {
         customer = new Customer("Fra", 10000.0);
+        drumStick = new DrumStick("1","Yamaha",15.00,30.00);
+        guitar = new Guitar("1","Gibson","metal", InstrumentType.STRING, 300.00,500.00,7);
+
     }
 
 
@@ -32,5 +41,11 @@ public class CustomerTest {
     @Test
     public void countMyMusicStuff() {
         assertEquals(0, customer.countMyMusicStuff());
+    }
+    @Test
+    public void canAddStuffInMyMusicStuff() {
+        assertEquals(0, customer.countMyMusicStuff());
+        customer.addToMusicStuff(guitar);
+        assertEquals(1, customer.countMyMusicStuff());
     }
 }
